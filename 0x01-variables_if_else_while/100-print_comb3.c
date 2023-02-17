@@ -22,11 +22,11 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	{
 	putchar(alpa);
 	putchar(y);
-	
+	if (alpa == '8' && y == '9')
+	break;
 	putchar(coma);
 	putchar(spp);
 	}
-
 }
 
 putchar(bla);
