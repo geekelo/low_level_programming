@@ -11,10 +11,10 @@
 int main(void)
 {
 /* your code goes there */
-int alpa, bla;
+int bla;
 
 bla = '\n';
-for (alpa = 0; alpa < 10; alpa++)
+for (int alpa = '0'; alpa <= '9'; alpa++)
 {
 putchar(alpa);
 }
