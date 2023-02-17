@@ -14,7 +14,7 @@ int main(void)
 int alpa, bla;
 
 bla = '\n';
-for(alpa = 'a'; alpa <= 'z'; alpa++)
+for (alpa = 'a'; alpa <= 'z'; alpa++)
 {
 putchar(alpa);
 }
