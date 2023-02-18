@@ -21,16 +21,9 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	for (x = '0'; x <= '8'; x++)
 	{
 	for (y = alpa; y <= '9'; y++)
-	{	
-	if (y == '1')
 	{
 	z = '0';
-	}
-	else
-	{
-	z = '1';
-	}
-	while( z <= '9')
+	while (z <= '9')
 	{
 	putchar(alpa);
 	putchar(x);
