@@ -22,7 +22,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	{
 	for (y = alpa; y <= '9'; y++)
 	{
-	for (z = x + 1; z <= '9'; z++)
+	for (z = '1'; z <= '9'; z++)
 	{
 	putchar(alpa);
 	putchar(x);
@@ -34,7 +34,6 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(coma);
 	putchar(spp);
 	}
-	z = '0';
 	}
 	}
 }
