@@ -44,6 +44,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(spp);
 	z++;
 	}
+	z++;
 	}
 	}
 }
