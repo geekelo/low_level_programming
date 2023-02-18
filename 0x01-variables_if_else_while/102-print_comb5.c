@@ -19,7 +19,7 @@ bla = '\n';
 
 for (alpa = '0'; alpa <= '9'; alpa++)
 {
-	for (x = '0'; x <= '8'; x++)
+	for (x = '0'; x <= '9'; x++)
 	{
 	z = x + 1;
 	for (y = alpa; y <= '9'; y++)
