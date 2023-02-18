@@ -16,27 +16,20 @@ int alpa, bla, coma, spp, y, x, z;
 spp = ' ';
 coma = ',';
 bla = '\n';
+
 for (alpa = '0'; alpa <= '9'; alpa++)
 {
 	for (x = '0'; x <= '8'; x++)
 	{
+	z = x + 1;
 	for (y = alpa; y <= '9'; y++)
 	{
-	z = '1';
-	if (y >= 1)
-	{
-	z = '0';
-	}
 	while (z <= '9')
 	{
 	putchar(alpa);
 	putchar(x);
 	putchar(spp);
 	putchar(y);
-	if (alpa == y && x == z)
-	{
-	z = z + 1;
-	}
 	putchar(z);
 	if (alpa == '9' && x == '8' && y == '9' && z == '9')
 	break;
@@ -44,7 +37,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(spp);
 	z++;
 	}
-	z++;
+	z = '0';
 	}
 	}
 }
