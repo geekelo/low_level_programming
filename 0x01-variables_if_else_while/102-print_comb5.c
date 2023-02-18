@@ -18,7 +18,7 @@ coma = ',';
 bla = '\n';
 for (alpa = '0'; alpa <= '9'; alpa++)
 {
-	for (x = 0; x <= '8'; x++)
+	for (x = '0'; x <= '8'; x++)
 	{
 	for (y = alpa; y <= '9'; y++)
 	{
@@ -34,7 +34,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(coma);
 	putchar(spp);
 	}
-	z = 0;
+	z = '0';
 	}
 	}
 }
