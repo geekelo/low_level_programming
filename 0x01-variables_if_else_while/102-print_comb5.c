@@ -22,13 +22,10 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	{
 	for (y = alpa; y <= '9'; y++)
 	{
+	z = '1';
 	if (y >= 1)
 	{
 	z = '0';
-	}
-	else
-	{
-	z = '1';
 	}
 	while (z <= '9')
 	{
@@ -36,6 +33,10 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(x);
 	putchar(spp);
 	putchar(y);
+	if (y == alpa && x == z)
+	{
+	z = x + '1';
+	}
 	putchar(z);
 	if (alpa == '9' && x == '8' && y == '9' && z == '9')
 	break;
