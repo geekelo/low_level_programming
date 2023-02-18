@@ -24,6 +24,8 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	{
 	for (z = '1'; z <= '9'; z++)
 	{
+	if (y == '1' )
+	z = '0';
 	putchar(alpa);
 	putchar(x);
 	putchar(spp);
