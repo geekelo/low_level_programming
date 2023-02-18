@@ -21,13 +21,17 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	for (x = '0'; x <= '8'; x++)
 	{
 	for (y = alpa; y <= '9'; y++)
-	{
-	for (z = '1'; z <= '9'; z++)
-	{
+	{	
 	if (y == '1')
 	{
 	z = '0';
 	}
+	else
+	{
+	z = '1';
+	}
+	for (z <= '9'; z++;)
+	{
 	putchar(alpa);
 	putchar(x);
 	putchar(spp);
