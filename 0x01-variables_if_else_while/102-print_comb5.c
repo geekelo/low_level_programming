@@ -30,7 +30,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	{
 	z = '1';
 	}
-	for (z <= '9'; z++;)
+	while( z <= '9')
 	{
 	putchar(alpa);
 	putchar(x);
@@ -41,6 +41,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	break;
 	putchar(coma);
 	putchar(spp);
+	z++;
 	}
 	}
 	}
