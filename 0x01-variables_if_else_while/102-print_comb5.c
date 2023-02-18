@@ -35,7 +35,7 @@ for (alpa = '0'; alpa <= '9'; alpa++)
 	putchar(y);
 	if (alpa == y && x == z)
 	{
-	z = z + '1';
+	z = z + 1;
 	}
 	putchar(z);
 	if (alpa == '9' && x == '8' && y == '9' && z == '9')
