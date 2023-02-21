@@ -7,13 +7,7 @@ void print_alphabet_x10(void)
 char x, y;
 
 y = '0';
-do {
-for (x = 'a'; x <= 'z'; x++)
-{
-_putchar(x);
-}
-_putchar('\n');
-} while (y < 9);
+while (y < 10)
 {
 for (x = 'a'; x <= 'z'; x++)
 {
