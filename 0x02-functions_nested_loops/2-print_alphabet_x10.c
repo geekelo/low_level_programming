@@ -14,5 +14,5 @@ _putchar(x);
 }
 _putchar('\n');
 }
-while (y < 9 )
+while (y < 9 );
 }
