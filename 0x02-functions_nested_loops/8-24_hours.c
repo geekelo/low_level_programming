@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - checks for letters only*
- * @n: The character to print
+ * jack_bauer - checks for letters only*
  *
  * Return: returns zero false and one and true
  *
