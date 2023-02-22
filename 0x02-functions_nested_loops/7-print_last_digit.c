@@ -13,7 +13,7 @@ int lastdigit;
 
 lastdigit = n % 10;
 
-if ( lastdigit < '0')
+if (lastdigit < '0')
 {
 lastdigit = lastdigit * -1;
 }
