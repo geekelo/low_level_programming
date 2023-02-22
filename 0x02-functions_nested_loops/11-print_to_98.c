@@ -22,7 +22,7 @@ printf("%d, ", i);
 else if (n > 98)
 {
 for (i = n; i <= 98; i--)
-printf("%d, ", i)
+printf("%d, ", i);
 }
 else
 {
