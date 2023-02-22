@@ -17,9 +17,9 @@ for (x = '0'; x < '3'; x++)
 		for (z = '0'; z < 6;  z++)
 		{
 			for (s = '0'; s <= 9; s++)
-			{
-				
-				_putchar('7');
+			{				
+				_putchar('a');
+				_putchar('\n')
 			}
 		}
 	}
