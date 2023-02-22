@@ -18,12 +18,8 @@ for (x = '0'; x < '3'; x++)
 		{
 			for (s = '0'; s <= 9; s++)
 			{
-				_putchar(x);
-				_putchar(y);
-				_putchar(':');
-				_putchar(z);
-				_putchar(s);
-				_putchar('\n');
+				
+				_putchar('7');
 			}
 		}
 	}
