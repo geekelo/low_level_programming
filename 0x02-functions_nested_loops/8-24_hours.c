@@ -19,7 +19,7 @@ for (x = '0'; x < '3'; x++)
 			for (s = '0'; s <= 9; s++)
 			{				
 				_putchar('a');
-				_putchar('\n')
+				_putchar('\n');
 			}
 		}
 	}
