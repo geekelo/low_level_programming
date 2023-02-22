@@ -3,9 +3,9 @@
 /**
  * add - adds sum of numbers
  *
- * n: first parameter
- * c: second parameter
- * 
+ * @n: first parameter
+ * @c: second parameter
+ *
  * Return: the sum
 */
 
