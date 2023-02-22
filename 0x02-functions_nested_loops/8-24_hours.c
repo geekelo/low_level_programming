@@ -1,0 +1,33 @@
+#include "main.h"
+/**
+ * print_last_digit - checks for letters only*
+ * @n: The character to print
+ *
+ * Return: returns zero false and one and true
+ *
+ */
+
+void jack_bauer(void)
+{
+int x,y,z,s;
+
+for (x = '0'; x < '3'; x ++)
+{
+	for (y = '0'; y <= 9; y++)
+	{
+		for (z = '0'; z < 6;  z++)
+		{
+		 	for (s = '0'; s <= 9; s++)
+			{
+				if (x == '2' && y == '3' && z == '5' && s == '9')
+					break;
+				_putchar(x + '0');
+				_putchar(y + '0');
+				_putchar(':');
+				_putchar(z + '0');
+				_putchar(s + '0');
+			}
+		}
+	{
+}
+}
