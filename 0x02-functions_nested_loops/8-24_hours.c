@@ -18,11 +18,11 @@ for (x = '0'; x < '3'; x++)
 		{
 			for (s = '0'; s <= 9; s++)
 			{
-				_putchar(x + '0');
-				_putchar(y + '0');
+				_putchar(x);
+				_putchar(y);
 				_putchar(':');
-				_putchar(z + '0');
-				_putchar(s + '0');
+				_putchar(z);
+				_putchar(s);
 				_putchar('\n');
 			}
 		}
