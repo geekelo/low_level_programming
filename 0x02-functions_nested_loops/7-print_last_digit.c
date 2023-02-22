@@ -14,4 +14,5 @@ int lastdigit;
 lastdigit = n % 10;
 _putchar(lastdigit);
 _putchar(lastdigit);
+
 }
