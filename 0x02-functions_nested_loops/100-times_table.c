@@ -27,11 +27,11 @@ if (k <= 9)
 _putchar(44);
 _putchar(k + 48);
 }
-else{
+else
+{
 _putchar((k / 10) + 48);
 _putchar((k % 10) + 48);
 }
- 
 }
 }
 }
