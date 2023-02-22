@@ -10,5 +10,8 @@
 
 int _abs(int n)
 {
-abs(int)
+int y;
+
+y = abs(n);
+return (y);
 }
