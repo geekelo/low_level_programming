@@ -10,6 +10,6 @@ void times_table(void)
 {
 int i;
 
-	i = '5' - '0';
+	i = '5' + '0';
 	_putchar(i);
 }
