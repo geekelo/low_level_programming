@@ -18,10 +18,6 @@ for (x = '0'; x < '3'; x ++)
 		{
 		 	for (s = '0'; s <= 9; s++)
 			{
-				if (x == '2' && y == '3' && z == '5' && s == '9')
-				{
-					break;
-				}
 				_putchar(x + '0');
 				_putchar(y + '0');
 				_putchar(':');
