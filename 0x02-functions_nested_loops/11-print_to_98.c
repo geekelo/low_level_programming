@@ -2,7 +2,7 @@
 
 /**
  * print_to_98 - returns num fro n - 98
- * 
+ *
  * @n: parameter to start form
 */
 
@@ -10,8 +10,8 @@ void print_to_98(int n)
 {
 int i;
 
-for (i = n; i < 99; i++)
-{
+    for (i = n; i < 99; i++)
+    {
     if (n < 0)
     {
         _putchar(45);
@@ -24,11 +24,11 @@ for (i = n; i < 99; i++)
     }
     else
     {
-        _putchar(n + 48);
+    _putchar(n + 48);
     }
 
-    _putchar(44);
-    _putchar(32);
+_putchar(44);
+_putchar(32);
 
 }
 }
