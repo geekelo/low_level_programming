@@ -8,5 +8,5 @@
 
 void jack_bauer(void)
 {
-putchar('9');
+_putchar('9');
 }
