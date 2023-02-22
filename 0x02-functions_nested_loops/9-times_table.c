@@ -26,7 +26,6 @@ int i, y, j;
 					}
 					else
 					{
-					
 						_putchar((y / 10) + 48);
 						_putchar((y % 10) + 48);
 					}
