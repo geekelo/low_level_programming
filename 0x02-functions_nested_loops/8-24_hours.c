@@ -16,7 +16,7 @@ for (x = '0'; x < '3'; x++)
 	{
 		for (z = '0'; z < 6;  z++)
 		{
-		 	for (s = '0'; s <= 9; s++)
+			for (s = '0'; s <= 9; s++)
 			{
 				_putchar(x + '0');
 				_putchar(y + '0');
