@@ -8,5 +8,5 @@
 
 void jack_bauer(void)
 {
-	return (00);
+putchar('9');
 }
