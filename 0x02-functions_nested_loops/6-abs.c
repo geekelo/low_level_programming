@@ -8,7 +8,7 @@
  *
  */
 
-int _abs(int)
+int _abs(int n)
 {
 abs(int)
 }
