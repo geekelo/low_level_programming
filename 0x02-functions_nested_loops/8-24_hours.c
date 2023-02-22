@@ -1,27 +1,12 @@
 #include "main.h"
 /**
- * jack_bauer - checks for letters only*
+ * jack_bauer-prints all minutes in a day from 00:00
  *
- * Return: returns zero false and one and true
- *
+ * Return:0 if succeesful.
  */
+
 
 void jack_bauer(void)
 {
-int x, y, z, s;
-
-for (x = '0'; x < '3'; x++)
-{
-	for (y = '0'; y <= 9; y++)
-	{
-		for (z = '0'; z < 6;  z++)
-		{
-			for (s = '0'; s <= 9; s++)
-			{				
-				_putchar('a');
-				_putchar('\n');
-			}
-		}
-	}
-}
+	return (00);
 }
