@@ -25,6 +25,7 @@ for (x = '0'; x < '3'; x ++)
 				_putchar(':');
 				_putchar(z + '0');
 				_putchar(s + '0');
+				_putchar('\n');
 			}
 		}
 	}
