@@ -3,7 +3,7 @@
 /**
 * print_to_98 - returns num fro n - 98
 *
-* @n: parameter to start form
+* @n: parameter to start from
 */
 
 void print_to_98(int n)
