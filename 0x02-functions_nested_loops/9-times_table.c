@@ -15,7 +15,7 @@ int i, y, j;
 		for (j = '0'; j <= '9'; j++)
 		{
 		y = i * j;
-		_putchar(y + '0');
+		_putchar(y - '0');
 		_putchar(',');
 		_putchar(' ');
 		}
