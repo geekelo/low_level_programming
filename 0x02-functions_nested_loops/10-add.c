@@ -11,5 +11,8 @@
 
 int add(int n, int c)
 {
- return (n + c);
+    int k;
+
+        k = n + c;
+    return (k + 48);
 }
