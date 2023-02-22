@@ -8,7 +8,7 @@
 
 void times_table(void)
 {
-int i, y, j;
+int i;
 
 	i = '5' * 10;
 	_putchar(i);
