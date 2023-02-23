@@ -11,33 +11,38 @@ int main(void)
 
 
 int x;
-long int y, z, sum;
+long int y, z, sum, w, even;
 
 y = 2;
 z = 1;
 sum = 0;
+x = 0;
+even = 0;
 
-for (x = 1; x <= 50; x++)
+while (sum <= 4000000)
 {
-sum = y + z;
 if (x == 1 || x == 2)
 {
-printf("%d, ", x);
+w = x % 2;
+if (w == 0)
+{
+even = even + x;
+}
 }
 else
 {
-if (x == 50)
+sum = y + z;
+
+w = sum % 2;
+if (w == 0)
 {
-printf("%ld\n", sum);
+even = even + sum;
 }
-else
-{
-printf("%ld, ", sum);
 z = y;
 y = sum;
 }
 }
-}
 
+printf("%ld\n", even);
 return (0);
 }
