@@ -16,7 +16,6 @@ sum = 0;
 
 for (x = 1; x <= 50; x++)
 {
-y = y + x;
 if (x == 1 || x == 2)
 {
 printf("%d, ", x);
