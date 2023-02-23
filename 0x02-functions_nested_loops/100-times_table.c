@@ -39,8 +39,7 @@ _putchar(32);
 _putchar(32);
 _putchar(32);
 _putchar(k + '0');
-}
-}
+}}
 if (j == n)
 break;
 _putchar(44);
