@@ -24,13 +24,16 @@ printf("%d, ", x);
 }
 else
 {
-if (x >= 50)
+if (x == 50)
 {
-printf("%ld\n", sum);  
+printf("%ld\n", sum);
 }
+else
+{
 printf("%ld, ", sum);
 z = y;
 y = sum;
+}
 }
 }
 return (0);
