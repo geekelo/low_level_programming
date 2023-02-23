@@ -16,7 +16,7 @@ long int y, z, sum, w, even;
 y = 2;
 z = 1;
 sum = 0;
-x = 0;
+x = 1;
 even = 0;
 
 while (sum <= 4000000)
@@ -43,6 +43,6 @@ y = sum;
 }
 }
 
-printf("%ld\n", even);
+printf("%ld\n", even );
 return (0);
 }
