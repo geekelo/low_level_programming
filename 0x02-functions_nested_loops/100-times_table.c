@@ -57,11 +57,12 @@ _putchar(44);
 else
 {
 
-if (j >= 1 && k == 0)
+if (i >= 1 && k == 0)
 {
 _putchar(k + '0');
 _putchar(44);
 }
+else{
 _putchar(32);
 _putchar(32);
 _putchar(32);
@@ -72,7 +73,7 @@ break;
 }
 _putchar(44);
 
-
+}
 }
 }
 _putchar('\n');
