@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
- * fibo - prints the sum of mult 3 or 5
+ * main - prints the sum of mult 3 or 5
+ * 
+ * Return: Always 0
 */
 
-void fibo(void)
+int main(void)
 {
     int i, j, k, l;
 
@@ -20,4 +22,6 @@ void fibo(void)
             }
     }
     printf("%d\n", j);
+
+    return (0);
 }
