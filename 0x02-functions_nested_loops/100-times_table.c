@@ -34,14 +34,12 @@ else
 if (i >= 0 && j == 0)
 {
 _putchar(k + '0');
-}
-else
-{
+break;
 _putchar(32);
 _putchar(32);
 _putchar(32);
 _putchar(k + '0');
-}}
+}
 if (j == n)
 break;
 _putchar(44);
