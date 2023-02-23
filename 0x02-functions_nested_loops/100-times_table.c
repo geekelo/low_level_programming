@@ -41,6 +41,7 @@ _putchar(32);
 
 else
 {
+_putchar(32);
 _putchar(k + '0');
 if (j == n)
 {
