@@ -20,10 +20,7 @@ else if (n == 2)
 {
 for (i = 0; i <= 2; i++)
 {
-_putchar('0');
-_putchar(44);
-_putchar(32);
-_putchar(32);
+
 for (j = 0; j <= 2; j++)
 {
 k = i * j;
