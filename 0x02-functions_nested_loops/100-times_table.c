@@ -29,7 +29,7 @@ k = i * j;
 if (k > 99)
 {
 _putchar((k / 100) + '0');
-_putchar((k / 10) + '0');
+_putchar(((k / 10) % 10) + '0');
 _putchar((k % 10) + '0');
 if (j == n)
 {
