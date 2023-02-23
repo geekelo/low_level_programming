@@ -24,7 +24,10 @@ printf("%d, ", x);
 }
 else
 {
-
+if (x >= 50)
+{
+printf("%ld\n", sum);  
+}
 printf("%ld, ", sum);
 z = y;
 y = sum;
