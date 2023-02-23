@@ -25,7 +25,22 @@ for (j = 0; j <= n; j++)
 {
 k = i * j;
 
-if (k > 9)
+
+if (k > 99)
+{
+_putchar((k / 100) + '0');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
+if (j == n)
+{
+break;
+}
+_putchar(44);
+_putchar(32);
+}
+
+
+else if (k > 9)
 {
 _putchar((k / 10) + '0');
 _putchar((k % 10) + '0');
@@ -36,7 +51,7 @@ break;
 _putchar(44);
 _putchar(32);
 _putchar(32);
-_putchar(32);
+
 }
 
 else
@@ -51,7 +66,7 @@ _putchar(44);
 _putchar(32);
 _putchar(32);
 _putchar(32);
-_putchar(32);
+
 }
 }
 _putchar('\n');
