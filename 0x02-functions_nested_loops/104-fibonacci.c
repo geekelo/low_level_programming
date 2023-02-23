@@ -9,7 +9,7 @@
 int main(void)
 {
 int x;
-long int y, z, sum;
+long long int y, z, sum;
 
 y = 2;
 z = 1;
@@ -26,11 +26,11 @@ else
 {
 if (x == 98)
 {
-printf("%ld\n", sum);
+printf("%lu\n", sum);
 }
 else
 {
-printf("%ld, ", sum);
+printf("%lu, ", sum);
 z = y;
 y = sum;
 }
