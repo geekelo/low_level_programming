@@ -15,7 +15,7 @@ if (n > 0 && n <= 15)
 {
 for (i = 0; i <= n; i++)
 {
-_putchar(0 + 48);
+_putchar(i + 48);
 for (j = 0; i <= n; j++)
 {
 _putchar(44);
@@ -24,7 +24,7 @@ k = i * j;
 
 if (k <= 9)
 {
-_putchar(44);
+_putchar(32);
 _putchar(k + 48);
 }
 else
