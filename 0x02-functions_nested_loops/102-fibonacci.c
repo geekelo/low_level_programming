@@ -25,7 +25,7 @@ printf("%d, ", x);
 else
 {
 
-printf("%d, ", sum);
+printf("%ld, ", sum);
 z = y;
 y = sum;
 }
