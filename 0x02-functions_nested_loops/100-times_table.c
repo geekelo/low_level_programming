@@ -35,5 +35,9 @@ _putchar((k % 10) + 48);
 }
 }
 }
+else if (n == 0)
+{
+_putchar(48);
+}
 
 }
