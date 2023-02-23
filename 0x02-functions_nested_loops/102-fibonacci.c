@@ -25,9 +25,10 @@ else
 {
 sum = y + z;
 printf("%d, ", sum);
+
+}
 z = y;
 y = sum;
-}
 }
 return (0);
 }
