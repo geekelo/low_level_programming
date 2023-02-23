@@ -57,7 +57,7 @@ _putchar(44);
 else
 {
 
-if (i >= 1 && j == 0)
+if (i >= 0 && j == 0)
 {
 _putchar(k + '0');
 _putchar(44);
