@@ -1,40 +1,42 @@
 #include <stdio.h>
-
 /**
-* main - prints the sum of mult 3 or 5
-*
-* Return: Always 0
-*/
-
+ * main - finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2
+ * followed by a new line
+ * Return: ALways 0 (Success)
+ */
 int main(void)
 {
-int x;
-unsigned long int y, z, sum;
+	unsigned long int i, j, k, j1, j2, k1, k2;
 
-y = 2;
-z = 1;
-sum = 0;
+	j = 1;
+	k = 2;
 
-for (x = 1; x <= 98; x++)
-{
-sum = y + z;
-if (x == 1 || x == 2)
-{
-printf("%d, ", x);
-}
-else
-{
-if (x == 98)
-{
-printf("%lu\n", sum);
-}
-else
-{
-printf("%lu, ", sum);
-z = y;
-y = sum;
-}
-}
-}
-return (0);
+	printf("%lu", j);
+
+	for (i = 1; i < 91; i++)
+	{
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
+	}
+
+	j1 = j / 1000000000;
+	j2 = j % 1000000000;
+	k1 = k / 1000000000;
+	k2 = k % 1000000000;
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", k1 + (k2 / 1000000000));
+		printf("%lu", k2 % 1000000000);
+		k1 = k1 + j1;
+		j1 = k1 - j1;
+		k2 = k2 + j2;
+		j2 = k2 - j2;
+	}
+
+	printf("\n");
+
+	return (0);
 }
