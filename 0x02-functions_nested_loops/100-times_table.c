@@ -33,11 +33,13 @@ else
 {
 if (j == 0)
 _putchar(k + '0');
-break;
+else
+{
 _putchar(32);
 _putchar(32);
 _putchar(32);
 _putchar(k + '0');
+}
 }
 if (j == n)
 break;
