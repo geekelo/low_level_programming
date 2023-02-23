@@ -41,6 +41,7 @@ even = even + sum;
 z = y;
 y = sum;
 }
+x++;
 }
 
 printf("%ld\n", even );
