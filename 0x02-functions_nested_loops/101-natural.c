@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fibo
+ * fibo - prints the sum of mult 3 or 5
 */
 
 void fibo(void)
