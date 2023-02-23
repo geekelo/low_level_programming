@@ -44,6 +44,6 @@ y = sum;
 x++;
 }
 
-printf("%ld\n", even );
+printf("%ld\n", even);
 return (0);
 }
