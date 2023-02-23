@@ -8,9 +8,11 @@
 
 int main(void)
 {
-int x, y;
+int x, y, z, sum;
 
-y = 0;
+y = 2;
+z = 1;
+sum = 0;
 
 for (x = 1; x <= 50; x++)
 {
@@ -21,7 +23,10 @@ printf("%d, ", x);
 }
 else
 {
-printf("%d, ", y);
+sum = y + z;
+printf("%d, ", sum);
+z = y;
+y = sum;
 }
 }
 }
