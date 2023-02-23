@@ -7,10 +7,10 @@
 
 int main(void)
 {
-        int i;
+        int i, y;
 
         i = 0;
-        positive_or_negative(i);
-
+        y = positive_or_negative(i);
+        printf("%d is %d", i, y);
         return (0);
 }
