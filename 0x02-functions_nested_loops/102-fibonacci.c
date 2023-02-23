@@ -8,7 +8,8 @@
 
 int main(void)
 {
-int x, y, z, sum;
+int x;
+long int y, z, sum;
 
 y = 2;
 z = 1;
