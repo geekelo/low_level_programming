@@ -31,7 +31,7 @@ _putchar((k % 10) + '0');
 }
 else
 {
-if (i >= 0 && j == 0)
+if (j == 0)
 _putchar(k + '0');
 break;
 _putchar(32);
