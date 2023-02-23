@@ -27,6 +27,9 @@ for (j = 0; j <= 2; j++)
 {
 k = i * j;
 _putchar(k + '0');
+if (j == 2){
+break;
+}
 _putchar(44);
 _putchar(32);
 
