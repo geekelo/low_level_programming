@@ -17,7 +17,7 @@ _putchar(92);
 _putchar('\n');
 for (j = 0; j < n; j++)
 {
-_putchar('32');
+_putchar(32);
 }
 }
 }
