@@ -2,7 +2,6 @@
 
 /**
 * _isdigit - tests if the parameter is a digit
-* 
 * @c: parameter
 
 * Return: 1 if true and 0 if false
