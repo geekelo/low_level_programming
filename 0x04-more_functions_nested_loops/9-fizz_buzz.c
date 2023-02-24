@@ -27,7 +27,7 @@ else
 printf("%d", i)
 }
 
-if (i < (size - 1))
+if (i < 99)
 {
 printf(" ");
 }
