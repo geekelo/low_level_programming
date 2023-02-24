@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints diaginal lines
- * @n: parameter
+* print_diagonal - prints diaginal lines
+* @n: parameter
 */
 
 void print_diagonal(int n)
@@ -21,5 +21,7 @@ _putchar(32);
 }
 }
 }
+else{
 _putchar('\n');
+}
 }
