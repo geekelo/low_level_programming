@@ -15,9 +15,8 @@ for (i=1; i <= n; i++)
 {
 _putchar(92);
 _putchar('\n');
-if (i == n)
+if (i < n)
 {
-break;
 for (j = 0; j < n; j++)
 {
 _putchar(32);
