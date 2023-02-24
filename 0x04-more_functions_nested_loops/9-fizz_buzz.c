@@ -8,21 +8,19 @@
 
 int main(void)
 {
-int i, j, k;
+int i;
 
 for (i = 1; i <= 100; i++)
 {
-j = i % 3;
-k = i % 5;
-if (j == 0 && k == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz");
 }
-else if (j == 0)
+else if (i % 3 == 0)
 {
 printf("Fizz");
 }
-else if (k == 0)
+else if (i % 5 == 0)
 {
 printf("Buzz");
 }
