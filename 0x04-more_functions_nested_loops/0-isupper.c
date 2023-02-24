@@ -7,7 +7,7 @@
 */
 
 
-int _isupper(char c)
+void _isupper(char c)
 {
 if (isupper(c))
 {
