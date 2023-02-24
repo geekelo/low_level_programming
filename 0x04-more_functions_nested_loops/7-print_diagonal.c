@@ -15,11 +15,18 @@ for (i=1; i <= n; i++)
 {
 _putchar(92);
 _putchar('\n');
+if (i == n)
+{
+break;
 for (j = 0; j < n; j++)
 {
-_putchar(' ');
+_putchar(32);
 }
 }
 }
+}
+else
+{
 _putchar('\n');
+}
 }
