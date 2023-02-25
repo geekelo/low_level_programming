@@ -3,6 +3,7 @@
 
 /**
 * main - prints the highest prime factor of n
+* Return: Always 0
 */
 
 int main(void)
