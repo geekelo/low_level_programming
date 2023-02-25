@@ -15,7 +15,7 @@ j = sizeof(n);
 for (i = j; i > 1; i--)
 {
 k = n / pow(10, i);
-_putchar(k + "0");
+_putchar(k + 48);
 }
-_putchar((n % 10) + "10");
+_putchar((n % 10) + 48);
 }
