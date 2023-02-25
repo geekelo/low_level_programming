@@ -12,6 +12,8 @@ int i, k, l, m;
 k = 1;
 l = 0;
 m = 0;
+if (size > 0)
+{
 for (i = size; i > 0; i--)
 {
 while (l < (i - 1))
@@ -28,5 +30,10 @@ _putchar('\n');
 k++;
 m = 0;
 l = 0;
+}
+}
+else
+{
+_putchar('\n');
 }
 }
