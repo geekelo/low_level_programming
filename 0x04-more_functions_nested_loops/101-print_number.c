@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
+#include <math.h>
 
 /**
  * print_number - pints an integer
