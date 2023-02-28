@@ -4,6 +4,7 @@
 * _strcpy - copies text
 * @src: param
 * @dest: param
+* Return: a new aray
 */
 
 char *_strcpy(char *dest, char *src)
@@ -18,8 +19,6 @@ while (i >= 0)
 if (*(src + i) == '\0')
 break;
 i++;
-
-}
-  
+}  
 return (dest);
 }
