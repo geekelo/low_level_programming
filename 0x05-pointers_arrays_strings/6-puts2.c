@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
-* rev_string - reverses array
-* @s: param
+* puts - reverses array
+* @str: param
 */
 
 void puts2(char *str)
