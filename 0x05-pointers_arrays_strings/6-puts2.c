@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-* puts - reverses array
+* puts2 - reverses array
 * @str: param
 */
 
