@@ -15,7 +15,7 @@ if (n > 0)
 for (i = 0; i < n; i++)
 {
 l = *(a + i);
-if (i < n -1)
+if (i < n - 1)
 {
 printf("%d, ", l);
 }
@@ -27,6 +27,6 @@ printf("%d\n", l);
 }
 else
 {
-printf(" \n");
+printf("\n");
 }
 }
