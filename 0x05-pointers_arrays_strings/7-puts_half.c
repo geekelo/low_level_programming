@@ -12,7 +12,7 @@ int i, j;
 
 i = strlen(str);
 
-for (j = i / 2; j < i; j++)
+for (j = i / 2; j <= i; j++)
 {
 _putchar(str[j]);
 }
