@@ -28,7 +28,7 @@ k = m / 2;
 }
 else
 {
-
+k = m / 2;
 }
 for (j = k; j < m; j++)
 {
