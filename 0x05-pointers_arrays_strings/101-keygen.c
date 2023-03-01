@@ -10,12 +10,11 @@
 
 int main(void)
 {
-int x, y;
+int y;
 char z[14];
 char alpa[] = "Tada! Congrats";
 
 srand((unsigned int)(time(NULL)));
-x = rand() % 3;
 
 for (y = 0; y < 14; y++)
 {
