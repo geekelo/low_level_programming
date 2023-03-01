@@ -14,7 +14,7 @@ int x, y;
 
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
-char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+char alpa[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
 char z[14];
@@ -23,7 +23,7 @@ for (y = 0; y < 14; y++)
 {
 if (x == 1)
 {
-z[y] = alpha[rand() % 26];
+z[y] = alpa[rand() % 26];
 }
 else if (x == 2)
 {
