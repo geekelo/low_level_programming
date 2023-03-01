@@ -12,23 +12,23 @@ int main(void)
 {
 int x, y;
 char z[14];
-char alpa[] = "abcdefghijklmnopqrstuvwxyz";
-char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char alpa[] = "abcdefghijklmnopqrst";
+char upper[] = "ABCDEFGHIJKLMNOPQRST";
 char sym[] = "!@#$%";
 char pac[] = " ";
 
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
-
-for (y = 0; y < 14; y++)
+y = 0;
+while (y > 0)
 {
 if (x == 1)
 {
-z[y] = upper[rand() % 26];
+z[y] = upper[rand() % 20];
 }
 else if (x == 2)
 {
-z[y] = alpa[rand() % 26];
+z[y] = alpa[rand() % 20];
 }
 else if (x == 3)
 {
@@ -38,8 +38,12 @@ else
 {
 z[y] = sym[rand() % 5];
 }
+if ((z[y] == upper[20]) || (y == 14))
+break;
 printf("%c", z[y]);
 x = rand() % 3;
+y++;
 }
+printf("Tada! Congrats");
 return (0);
 }
