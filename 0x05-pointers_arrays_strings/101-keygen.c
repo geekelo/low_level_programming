@@ -12,29 +12,15 @@ int main(void)
 {
 int x, y;
 char z[14];
-char alpa[] = "abcdefghijklmnopqrstuvwxyz";
-char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char sym[] = "!@#$%";
+char alpa[] = "Tada! Congrats";
 
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
 
 for (y = 0; y < 14; y++)
 {
-if (x == 1)
-{
-z[y] = alpa[rand() % 26];
-}
-else if (x == 2)
-{
-z[y] = upper[rand() % 26];
-}
-else
-{
-z[y] = sym[rand() % 5];
-}
+z[y] = alpa[y];
 printf("%c", z[y]);
-x = rand() % 3;
 }
 return (0);
 }
