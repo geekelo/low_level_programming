@@ -24,11 +24,11 @@ for (y = 0; y < 14; y++)
 {
 if (x == 1)
 {
-z[y] = alpa[rand() % 26];
+z[y] = upper[rand() % 26];
 }
 else if (x == 2)
 {
-z[y] = upper[rand() % 26];
+z[y] = alpa[rand() % 26];
 }
 else if (x == 3)
 {
