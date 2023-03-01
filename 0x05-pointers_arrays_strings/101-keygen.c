@@ -12,9 +12,9 @@ int main(void)
 {
 int x, y;
 
-x = rand() % 3;
 srand((unsigned int)(time(NULL)));
-  
+x = rand() % 3;
+
 char z[14];
 char alpa[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
