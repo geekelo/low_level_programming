@@ -38,7 +38,7 @@ else
 {
 z[y] = sym[rand() % 5];
 }
-if ((z[y] == upper[20]) || (y == 14))
+if ((z[y] == upper[19]) || (y == 14))
 break;
 printf("%c", z[y]);
 x = rand() % 3;
