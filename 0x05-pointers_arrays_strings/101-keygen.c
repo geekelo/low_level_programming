@@ -1,25 +1,35 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
-* main - returns random password
-* Return: Always 0
-*/
-
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-int y;
-char z[14];
-char alpa[] = "Tada! Congrats";
+ int sum = 2772;
+ int n;
 
-srand((unsigned int)(time(NULL)));
-
-for (y = 0; y < 14; y++)
-{
-z[y] = alpa[y];
-printf("%c", z[y]);
-}
-return (0);
+ srand(time(0));
+ while (sum)
+ {
+  n = rand() % 100;
+  if (n <= 94)
+   n += 32;
+  else
+   continue;
+  if (sum - n == 0)
+  {
+   sum -= n;
+   printf("%c", n);
+  }
+  else if (sum - n - 32 > 0)
+  {
+   sum -= n;
+   printf("%c", n);
+  }
+ }
+ return (0);
 }
