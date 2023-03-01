@@ -19,8 +19,10 @@ char pac[] = " ";
 
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
-y = 0;
-while (y >= 0)
+
+while (upper[rand() % 20] != upper[19])
+{
+for (y = 0; y < 14; y++)
 {
 if (x == 1)
 {
@@ -38,11 +40,10 @@ else
 {
 z[y] = sym[rand() % 5];
 }
-if ((z[y] == upper[19]) || (y == 14))
-break;
+
 printf("%c", z[y]);
 x = rand() % 3;
-y++;
+}
 }
 printf("Tada! Congrats");
 return (0);
