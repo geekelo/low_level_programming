@@ -35,4 +35,6 @@ z[y] = sym[rand() % 5];
 }
 printf("%c", z[y]);
 x = rand() % 3;
-}}
+}
+return (0);
+}
