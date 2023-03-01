@@ -20,9 +20,9 @@ char pac[] = " ";
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
 
-while (upper[rand() % 20] != upper[19])
+for (w = 0; w < 5; w++)
 {
-for (y = 0; y < 14; y++)
+for (y = 0; y < 7; y++)
 {
 if (x == 1)
 {
@@ -45,11 +45,6 @@ printf("%c", z[y]);
 x = rand() % 3;
 }
 }
-printf("\n");
-for (w = 0; w < 14; w++ )
-{
-char l[] = "Tada! Congrats";
-printf("%c", l[w]);
-}
+
 return (0);
 }
