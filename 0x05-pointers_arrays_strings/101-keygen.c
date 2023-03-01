@@ -10,17 +10,16 @@
 
 int main(void)
 {
-int x, y, size;
+int x, y;
 
-size = 14;
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
 char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
-char z[size];
+char z[14];
 
-for (y = 0; y < size; y++)
+for (y = 0; y < 14; y++)
 {
 if (x == 1)
 {
