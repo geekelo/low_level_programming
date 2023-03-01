@@ -15,6 +15,7 @@ char z[14];
 char alpa[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
+char pac[] = " ";
 
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
@@ -28,6 +29,10 @@ z[y] = alpa[rand() % 26];
 else if (x == 2)
 {
 z[y] = upper[rand() % 26];
+}
+else if (x == 3)
+{
+z[y] = pac[rand() % 1];
 }
 else
 {
