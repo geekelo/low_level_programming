@@ -10,7 +10,7 @@
 
 int main(void)
 {
-int x, y;
+int x, y, w;
 char z[14];
 char alpa[] = "abcdefghijklmnopqrst";
 char upper[] = "ABCDEFGHIJKLMNOPQRST";
@@ -45,6 +45,11 @@ printf("%c", z[y]);
 x = rand() % 3;
 }
 }
-printf("Tada! Congrats");
+printf("\n");
+for (w = 0; w < 14; w++ )
+{
+char l[] = "Tada! Congrats";
+printf("%c", l[w]);
+}
 return (0);
 }
