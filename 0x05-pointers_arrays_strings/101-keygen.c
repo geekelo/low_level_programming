@@ -20,7 +20,7 @@ char pac[] = " ";
 srand((unsigned int)(time(NULL)));
 x = rand() % 3;
 y = 0;
-while (y > 0)
+while (y >= 0)
 {
 if (x == 1)
 {
