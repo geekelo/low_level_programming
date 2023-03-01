@@ -11,14 +11,13 @@
 int main(void)
 {
 int x, y;
-
-srand((unsigned int)(time(NULL)));
-x = rand() % 3;
-
 char z[14];
 char alpa[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
+
+srand((unsigned int)(time(NULL)));
+x = rand() % 3;
 
 for (y = 0; y < 14; y++)
 {
