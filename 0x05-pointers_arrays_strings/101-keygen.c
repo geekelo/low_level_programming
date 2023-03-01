@@ -15,7 +15,7 @@ int x, y;
 x = rand() % 3;
 srand((unsigned int)(time(NULL)));
 
-char alpa[] = "abcdefghijklmnopqrstuvwxyz";
+char base[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
 char z[14];
