@@ -14,11 +14,11 @@ int x, y;
 
 x = rand() % 3;
 srand((unsigned int)(time(NULL)));
-
-char base[] = "abcdefghijklmnopqrstuvwxyz";
+  
+char z[14];
+char alpa[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char sym[] = "!@#$%";
-char z[14];
 
 for (y = 0; y < 14; y++)
 {
