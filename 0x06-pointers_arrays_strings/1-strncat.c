@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 {
 dest[m + i] = src[i];
 if (src[i] == '\0')
-  break;
+break;
 }
 
 
