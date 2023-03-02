@@ -11,9 +11,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i, m, k, x;
-char ri[50];
-char *eri = ri;
+int i, m;
+
 
 m = strlen(dest);
 for (i = 0; i < n; i++)
