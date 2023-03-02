@@ -31,5 +31,5 @@ for (k = 0; k < x; k++)
 {
 *(eri + (m + k)) = src[k];
 }
-return (eri);
+return (dest);
 }
