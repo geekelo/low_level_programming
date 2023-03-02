@@ -20,7 +20,7 @@ for (i = 0; i < n; i++)
 {
 dest[m + i] = src[i];
 }
-char *p = dest;
+
 x = strlen(src);
 m = strlen(dest);
 for (k = 0; k < m; k++)
@@ -31,5 +31,5 @@ for (k = 0; k < x; k++)
 {
 *(eri + (m + k)) = src[k];
 }
-return (dest);
+return (eri);
 }
