@@ -15,8 +15,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i;
-int m, k, x;
+int i, m, k, x;
 char ri[50];
 char *eri = ri;
 
@@ -26,7 +25,6 @@ for (i = 0; i < n; i++)
 dest[m + i] = src[i];
 }
 char *p = dest;
-
 x = strlen(src);
 m = strlen(dest);
 for (k = 0; k < m; k++)
@@ -37,7 +35,5 @@ for (k = 0; k < x; k++)
 {
 *(eri + (m + k)) = src[k];
 }
-
-
 return (dest);
 }
