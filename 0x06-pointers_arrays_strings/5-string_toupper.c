@@ -4,7 +4,7 @@
 
 /**
 * string_toupper - reverses strings
-* @*: param
+* @p: param
 * Return: the result
 */
 
