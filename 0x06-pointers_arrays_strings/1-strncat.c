@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include "main.h"
 
@@ -8,10 +6,8 @@
 * @dest: param
 * @src: param
 * @n: param
-* Return: a value
+* Return: a new string
 */
-
-
 
 char *_strncat(char *dest, char *src, int n)
 {
