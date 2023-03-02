@@ -5,6 +5,7 @@
 * _strcmp - compare strings
 * @s1: param
 * @s2: param
+* Return: the result
 */
 int _strcmp(char *s1, char *s2)
 {
