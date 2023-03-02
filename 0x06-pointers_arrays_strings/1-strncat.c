@@ -25,11 +25,11 @@ x = strlen(src);
 m = strlen(dest);
 for (k = 0; k < m; k++)
 {
-*(eri + k) = dest[k];
+*(dest + k) = dest[k];
 }
 for (k = 0; k < x; k++)
 {
-*(eri + (m + k)) = src[k];
+*(dest + (m + k)) = src[k];
 }
 return (dest);
 }
