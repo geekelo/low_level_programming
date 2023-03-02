@@ -21,15 +21,6 @@ for (i = 0; i < n; i++)
 dest[m + i] = src[i];
 }
 
-x = strlen(src);
-m = strlen(dest);
-for (k = 0; k < m; k++)
-{
-*(dest + k) = dest[k];
-}
-for (k = 0; k < x; k++)
-{
-*(dest + (m + k)) = src[k];
-}
+
 return (dest);
 }
