@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-/*
+/**
 * main - a function to print 98
 * Remember:
 * - you are not allowed to use a
@@ -8,6 +7,7 @@
 * - only one statement
 * - you are not allowed to code anything else than this line of code
 */
+
 int main(void)
 {
 int n;
