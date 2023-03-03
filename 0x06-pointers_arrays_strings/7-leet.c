@@ -10,30 +10,20 @@
 
 char *leet(char *k)
 {
-int i, j;
+int i, j, m;
 
+char al[] = "aAeEoOtTlL";
+char num[] = "4433007711";
 j = strlen(k);
 for (i = 0; i < j; i++)
 {
-if ((k[i] == 'a') || (k[i] == 'A'))
+for (m = 0; m < 10; m++)
 {
-k[i] = 52;
+if (k[i] == al[m])
+{
+k[i] = num[m];
 }
-else if ((k[i] == 'e') || (k[i] == 'E'))
-{
-k[i] = 51;
 }
-else if ((k[i] == 'o') || (k[i] == 'O'))
-{
-k[i] = 48;
 }
-else if ((k[i] == 't') || (k[i] == 'T'))
-{
-k[i] = 55;
-}
-else if ((k[i] == 'l') || (k[i] == 'L'))
-{
-k[i] = 49;
-}}
 return (k);
 }
