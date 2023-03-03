@@ -23,10 +23,11 @@ if (test[i] >= 'a' && test[i] <= 'z')
 j =  test[i] - 97;
 test[i] = lc[j + 13];
 }
-else if (test[i] >= 'A' && test[i] <= 'Z')
+while (test[i] >= 'A' && test[i] <= 'Z')
 {
 n =  test[i] - 65;
 test[i] = uc[n + 13];
+break;
 }
 }
 return (test);
