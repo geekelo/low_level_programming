@@ -10,6 +10,7 @@ a[2] = 1024;
 p = &n;
 /*
 * main - a function to print 98
+* Return: always 0
 * Remember:
 * - you are not allowed to use a
 * - you are not allowed to modify p
