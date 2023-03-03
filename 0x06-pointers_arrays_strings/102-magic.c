@@ -1,6 +1,6 @@
 #include <stdio.h>
   /*
-   * main - function prints
+   * main - Entry point
    * Remember:
    * - you are not allowed to use a
    * - you are not allowed to modify p
