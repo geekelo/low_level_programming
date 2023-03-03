@@ -1,35 +1,30 @@
 #include "main.h"
-#include <string.h>
-#include <ctype.h>
-
 /**
-* cap_string - reverses strings
-* @t: param
-* Return: the result
-*/
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
+ */
 
-char *cap_string(char *t)
+char *cap_string(char *s)
 {
-int i, v;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-v = strlen(t);
-for (i = 0; i < v; i++)
-{
-if ((t[i-1] == 32) || (t[i-1] == 46) ||
-(t[i-1] == 59) || (t[i-1] == 44) ||
-(t[i-1] == 92) ||  (t[i-1] == 10) ||
-(t[i-1] == 63) || (t[i-1] == 33) ||
-(t[i-1] == 34) || (t[i-1] == 40) ||
-(t[i-1] == 41) || (t[i-1] == 123) ||
-(t[i-1] == 125) || (t[i-1] == 9) ||
-(t[i-1] == 11))
-{
-t[i] = toupper(t[i]);
-}
-else
-{
-t[i] = t[i];
-}
-}
-return (t);
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
+	{
+		for (i = 0; i < 13; i++)
+		{
+			if (*(s + count) == sep_words[i])
+			{
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
+			}
+		}
+		count++;
+	}
+	return (s);
 }
