@@ -4,6 +4,7 @@
 /**
 * _strspn - finds the first occurence of a character
 * @accept: array param
+* @s: param
 * Return: Amemory address
 */
 
@@ -31,5 +32,5 @@ break;
 }
 i++;
 }
-return (i);  
+return (i);
 }
