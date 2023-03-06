@@ -23,7 +23,6 @@ return ((haystack + gen));
 }
 gen++;
 }
-
 len++;
 }
 return (s = 0);
