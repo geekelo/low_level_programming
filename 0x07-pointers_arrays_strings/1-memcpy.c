@@ -2,8 +2,8 @@
 
 /**
 * _memcpy - fills memory with a constant byte
-* @s: param array  or meory to be filled
-* @b: Character to fill with
+* @dest: param array  or meory to be filled
+* @src: Character to fill with
 * @n: size to fill
 * Return: an array
 */
