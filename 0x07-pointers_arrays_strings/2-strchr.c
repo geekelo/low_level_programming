@@ -5,6 +5,7 @@
 * _strchr - finds the first occurence of a character
 * @s: array param
 * @c: param character
+* Return: Amemory address
 */
 
 char *_strchr(char *s, char c)
