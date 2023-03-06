@@ -18,7 +18,10 @@ int gen = 0;
 while (haystack[gen] != '\0')
 {
 if ((needle[len] == haystack[gen]) &&
-(needle[len + 1] == haystack[gen + 1]))
+(needle[len + 1] == haystack[gen + 1]) &&
+(needle[len + 2] == haystack[gen + 2]) &&
+(needle[len + 3] == haystack[gen + 3]) &&
+(needle[len + 4] == haystack[gen + 4]))
 {
 return ((haystack + gen));
 }
