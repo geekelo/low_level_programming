@@ -19,7 +19,7 @@ while (s[len] != '\0')
 len++;
 }
 
-for (i = 0; i < len; i++)
+for (i = 0; i < len + 1; i++)
 {
 if (c == s[i])
 {
