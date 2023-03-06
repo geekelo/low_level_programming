@@ -26,13 +26,12 @@ gen++;
 }
 if (s[len] == accept[gen])
 {
-break;
-}
-len++;
-}
 while (s[len] >= '\0')
 {
 return ((s + len));
+len++;
+}
+}
 len++;
 }
 return ('\0');
