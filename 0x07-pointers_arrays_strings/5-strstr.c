@@ -25,5 +25,5 @@ gen++;
 }
 len++;
 }
-return (s = 0);
+return (haystack = 0);
 }
