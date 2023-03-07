@@ -2,8 +2,9 @@
 
 
 /**
-*
-*
+* _sqrt_recursion - finds the square root
+* @n: param
+* Return: result
 */
 
 
@@ -37,4 +38,3 @@ return (1);
 
 return (sqr(2, n));
 }
-
