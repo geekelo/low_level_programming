@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-*
-*
-*
+* print_diagsums - sum of diagonal
+* @a: param
+* @size: param
 */
 
 void print_diagsums(int *a, int size)
