@@ -4,6 +4,7 @@
 * prime - does further check
 * @v: param
 * @n: param
+* Return: a value
 */
 
 
@@ -26,6 +27,7 @@ return (prime(v, n));
 /**
 * is_prime_number - checks if a num is a prime no.
 * @n: param
+* Return: a value
 */
 
 int is_prime_number(int n)
