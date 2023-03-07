@@ -28,6 +28,7 @@ return (sqr(2, n));
 /**
 * sqr - finds the square root
 * @x: param
+* @n: param
 * Return: result
 */
 
