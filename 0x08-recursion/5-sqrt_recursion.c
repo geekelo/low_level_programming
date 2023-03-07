@@ -1,5 +1,5 @@
 #include "main.h"
-
+int sqr(int x, int n);
 
 /**
 * _sqrt_recursion - finds the square root
@@ -9,7 +9,7 @@
 * Return: result
 */
 
-int sqr(int x, int n);
+
 
 int _sqrt_recursion(int n)
 {
