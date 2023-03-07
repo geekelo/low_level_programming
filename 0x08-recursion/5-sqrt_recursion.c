@@ -1,23 +1,11 @@
 #include "main.h"
-
-/**
-* _sqrt_recursion - finds the square root
-* sqr - finds the square root
-* @n: param
-* @x: param
-* Return: result
-*/
 int sqr(int x, int n);
 
 /**
 * _sqrt_recursion - finds the square root
-* sqr - finds the square root
 * @n: param
-* @x: param
 * Return: result
 */
-
-
 
 int _sqrt_recursion(int n)
 {
@@ -36,6 +24,12 @@ return (1);
 
 return (sqr(2, n));
 }
+
+/**
+* sqr - finds the square root
+* @x: param
+* Return: result
+*/
 
 int sqr(int x, int n)
 {
