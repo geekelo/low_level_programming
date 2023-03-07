@@ -3,7 +3,7 @@
 
 /**
 * _sqrt_recursion - finds the square root
-* sqrt - finds the square root
+* sqr - finds the square root
 * @n: param
 * @x: param
 * Return: result
