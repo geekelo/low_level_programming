@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* sqrt - finds the square root
+* @x: param
+* Return: result
+*/
+int sqr(int x, int n);
 
 /**
 * _sqrt_recursion - finds the square root
