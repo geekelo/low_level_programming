@@ -26,6 +26,6 @@ while (j < ((size * size) - (size - 1)))
 k1 = k1 + *(a + j);
 j = j + (size - 1);
 }
- 
+
 printf("%d, %d\n", k, k1);
 }
