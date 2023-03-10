@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-long int multi;
+int multi;
 
 if (argc < 2)
 {
@@ -19,6 +19,6 @@ return (1);
 }
 
 multi = atoi(argv[1]) * atoi(argv[2]);
-printf("%ld\n", multi);
+printf("%d\n", multi);
 return (0);
 }
