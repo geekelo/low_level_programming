@@ -14,7 +14,7 @@ int cents;
 
 int i = 0;
 int j = 0;
-int arr[5] = {25,10,5,2,1};
+int arr[5] = {25, 10, 5, 2, 1};
 
 if (argc != 2)
 {
@@ -37,7 +37,8 @@ i++;
 else
 {
 j++;
-}}
+}
+}
 printf("%d\n", i);
 return (0);
 }
