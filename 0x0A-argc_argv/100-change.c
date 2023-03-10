@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int divi(int arr[], int n, char *argv[]);
+
 /**
 * main - function to print arguments
 * @argc: param
@@ -20,9 +20,9 @@ printf("Error\n");
 return (1);
 }
 
-while (cents > 10)
+while (cents >= 10)
 {
-for (i = 0; i  < 5; i++)
+for (i = 0; i < 5; i++)
 	{
 		if (cents >= arr[i])
 		{
@@ -35,6 +35,10 @@ for (i = 0; i  < 5; i++)
 	}
 	
 }
+	if (cents == 0)
+	{
+		cents += 1;
+	}
 	printf("%d\n", cents);
 		return (0);
 }	
