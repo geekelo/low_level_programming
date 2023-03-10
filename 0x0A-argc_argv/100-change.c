@@ -26,9 +26,6 @@ if (cents < 0)
 printf("0\n");
 return (0);
 }
-
-
-
 	while (cents > 0)
 		{
 			if (cents >= arr[j])
@@ -40,9 +37,7 @@ return (0);
 			{
 			j++;
 			}
-			
-			
 		}
 printf("%d\n", i);
 return (0);
-}	
+}
