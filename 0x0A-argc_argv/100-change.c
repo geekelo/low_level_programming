@@ -26,18 +26,18 @@ if (cents < 0)
 printf("0\n");
 return (0);
 }
-	while (cents > 0)
-		{
-			if (cents >= arr[j])
-			{
-				cents = cents - arr[j];
-				i++;
-			}
-			else
-			{
-			j++;
-			}
-		}
+while (cents > 0)
+{
+if (cents >= arr[j])
+{
+cents = cents - arr[j];
+i++;
+}
+else
+{
+j++;
+}
+}
 printf("%d\n", i);
 return (0);
 }
