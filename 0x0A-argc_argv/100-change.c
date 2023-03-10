@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 int cents;
+
 int i = 0;
 int j = 0;
 int arr[5] = {25,10,5,2,1};
@@ -36,8 +37,7 @@ i++;
 else
 {
 j++;
-}
-}
+}}
 printf("%d\n", i);
 return (0);
 }
