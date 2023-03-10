@@ -18,7 +18,7 @@ for (i = 0; i < argc; i++)
 {
 for (j = 0; j < 1; j++)
 {
-if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
+if (!(argv[i][j] >= 48 && argv[i][j] <= 57))
 {
 printf("Error\n");
 return (1);
