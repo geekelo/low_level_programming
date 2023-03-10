@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+int divi(int arr[], int n, char *argv[]);
 /**
 * main - function to print arguments
 * @argc: param
@@ -10,24 +10,31 @@
 
 int main(int argc, char *argv[])
 {
-int i, j;
-int sum = 0;
+int i;
+int arr[5] = {25,10,5,2,1};
+int cents = atoi(argv[1]);
 
- 
-for (i = 0; i < argc; i++)
-{
-for (j = 0; j < 1; j++)
-{
-if (!(argv[i][j] >= 48 && argv[i][j] <= 57))
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-}
 
-sum += atoi(argv[i]);
-
+while (cents > 10)
+{
+for (i = 0; i  < 5; i++)
+	{
+		if (cents >= arr[i])
+		{
+			cents = cents - arr[i];
+		}
+	if (cents < 10)
+	{
+	break;
+	}
+	}
+	
 }
-printf("%d\n", sum);
-return (0);
-}
+	printf("%d\n", cents);
+		return (0);
+}	
