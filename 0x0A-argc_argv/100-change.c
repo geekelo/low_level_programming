@@ -14,7 +14,7 @@ int i;
 int arr[5] = {25,10,5,2,1};
 int cents = atoi(argv[1]);
 
-if (argc != 2)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
