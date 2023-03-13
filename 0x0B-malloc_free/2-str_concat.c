@@ -2,8 +2,10 @@
 #include <stdlib.h>
 
 /**
- *
- *
+ * str_concat - concate 2 strings
+ * @s1: param
+ * @s2: param
+ * Return: new string
  */
 
 char *str_concat(char *s1, char *s2)
