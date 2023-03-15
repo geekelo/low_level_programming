@@ -3,8 +3,8 @@
 
 /**
  * str_concat - concate 2 strings
- * @s1: param
- * @s2: param
+ * @width: param
+ * @height: param
  * Return: new string
  */
 
