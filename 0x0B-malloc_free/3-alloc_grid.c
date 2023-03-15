@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concate 2 strings
+ * alloc_grid - concate 2 strings
  * @width: param
  * @height: param
  * Return: new string
