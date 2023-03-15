@@ -4,7 +4,7 @@
 /**
  * free_grid - concate 2 strings
  * @height: param
- * Return: new string
+ * @grid: new string
  */
 
 void free_grid(int **grid, int height)
