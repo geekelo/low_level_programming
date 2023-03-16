@@ -41,7 +41,6 @@ if (str == NULL)
 {
 	return (NULL);
 }
-
 k = 0;
 while (k < len)
 {
@@ -56,13 +55,9 @@ for (i = 0; i < ac; i++)
 	else
 	{
 	str[k] = av[i][j];
-	
 	}
 	k++;
-	}
-	
-	}
-}
+}}}
 str[len] = '\0';
 return (str);
 }
