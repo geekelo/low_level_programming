@@ -30,7 +30,7 @@ len++;
 len++;
 }
 
-str = malloc(1 + len  *  sizeof(char));
+str = malloc(1 + len  *sizeof(char));
 if (str == NULL)
 	return (NULL);
 k = 0;
