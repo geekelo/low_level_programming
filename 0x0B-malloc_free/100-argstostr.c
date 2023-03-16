@@ -4,15 +4,16 @@
 #include <string.h>
 
 /**
- * free_grid - concate 2 strings
- * @height: param
- * @grid: new string
+ * argstostr - concate 2 strings
+ * @ac: param
+ * @av: new string
+ * Return: new 1 dimensional array
  */
 
 char *argstostr(int ac, char **av)
 {
 int i, a, b, k, len;
-long unsigned int j;
+unsigned long int j;
 
 char *str = NULL;
 
