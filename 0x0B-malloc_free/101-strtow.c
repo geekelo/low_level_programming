@@ -39,6 +39,7 @@ char **strtow(char *str)
 			word++;
 		i++;
 	}
+
 	if (str == NULL || word == 0)
 		return (NULL);
 
