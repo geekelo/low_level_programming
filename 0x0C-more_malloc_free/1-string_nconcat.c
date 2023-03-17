@@ -15,11 +15,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len = 0, ven = 0, sum, index, count = 0; 
 	char *arr = NULL;
 
-	while (s1[len])
-		len++;
-	
+	if (s1 == NULL)
+		s1 = "\0";
 	if (s2 == NULL)
 		s2 = "\0";
+	while (s1[len])
+		len++;
 	
 	while (s2[ven])
 		ven++;
@@ -44,6 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count++;
 		index++;
 	}
-	arr[index + 1] = '\0';
+	arr[index] = '\0';
 	return (arr);	
 }
