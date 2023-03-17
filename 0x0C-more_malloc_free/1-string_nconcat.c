@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
+ * string_nconcat - concatenates strings
+ * @s1: param
+ * @s2: param
+ * @n: param
  * Return: Always 0.
  */
 
@@ -13,7 +15,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len = 0, ven = 0, sum, index, count = 0; 
 	char *arr = NULL;
 
-	/*find the length of s1*/
 	while (s1[len])
 		len++;
 	
@@ -23,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[ven])
 		ven++;
 
-	if (ven >= n)
+	if (n >= ven)
 		sum = ven + len;
 	else
 		sum = n + len;
