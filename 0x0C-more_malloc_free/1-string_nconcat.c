@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -7,12 +6,12 @@
  * @s1: param
  * @s2: param
  * @n: param
- * Return: Always 0.
+ * Return: new array.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len = 0, ven = 0, sum, index, count = 0; 
+	unsigned int len = 0, ven = 0, sum, index, count = 0;
 	char *arr = NULL;
 
 	if (s1 == NULL)
@@ -21,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "\0";
 	while (s1[len])
 		len++;
-	
+
 	while (s2[ven])
 		ven++;
 
@@ -38,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (index = 0; index < len; index++)
 		arr[index] = s1[index];
-	
+
 	while (index < sum)
 	{
 		arr[index] = s2[count];
@@ -46,5 +45,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		index++;
 	}
 	arr[index] = '\0';
-	return (arr);	
+	return (arr);
 }
