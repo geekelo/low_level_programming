@@ -41,7 +41,6 @@ char **strtow(char *str)
 	}
 	if (str == NULL || word == 0)
 		return (NULL);
-
 	arr = malloc((1 + word) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
