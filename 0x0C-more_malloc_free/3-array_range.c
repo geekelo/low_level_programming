@@ -4,15 +4,15 @@
 /**
  * array_range - creates an array of integers
  * @min: param
- * @max - param
+ * @max: param
  * Return: an array
  */
 
 int *array_range(int min, int max)
 {
-	int index, size = 0; 
+	int index, size = 0;
 	int *arr = NULL;
-	
+
 	if (min > max)
 		return (NULL);
 	size = max - min;
