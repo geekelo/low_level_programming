@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	char *arr = NULL;
 
-	if (nmemb == 0 || size == 0)
+	if (nmemb <= 0 || size <= 0)
 		return (NULL);
 	arr = malloc(nmemb * size);
 	if (arr == NULL)
@@ -21,9 +21,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		free(arr);
 		return (NULL);
 	}
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < nmemb * size; i++)
 		arr[i] = 0;
-	arr[i] = 0;
 
 	arr = (void *)arr;
 	return (arr);
