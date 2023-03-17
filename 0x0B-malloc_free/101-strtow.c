@@ -7,7 +7,7 @@
 /**
  * nowfree - Prints an array of string
  * @arr: The array to print
- * @int: param
+ * @word: param
  * Return: void
  */
 
@@ -39,15 +39,12 @@ char **strtow(char *str)
 			word++;
 		i++;
 	}
-
 	if (str == NULL || word == 0)
 		return (NULL);
 
 	arr = malloc((1 + word) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
-
-
 	while (str[k])
 	{
 		if (str[k] != ' ')
@@ -66,8 +63,7 @@ char **strtow(char *str)
 				col++;
 			}
 			arr[row][col] = '\0';
-
-			col = 0;	
+			col = 0;
 			len = 0;
 			row++;
 		}
