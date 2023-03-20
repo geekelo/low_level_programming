@@ -8,6 +8,7 @@
  * @owner: member
  *
  * Description: a struct that stores details aout a dog
+ * it contains the name, age, and owners name of the dog
  */
 
 struct dog 
@@ -18,3 +19,4 @@ struct dog
 };
 
 #endif
+
