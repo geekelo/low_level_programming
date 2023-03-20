@@ -1,16 +1,17 @@
-#ifndef DOH_H_
-#define DOG_H_
+#ifndef DOG_H
+#define DOG_H
+
 
 /**
  * struct dog - a newly defined structure
- * @name: member
- * @age: member
- * @owner: member
+ * @name: the dog's name
+ * @age: the dog's age
+ * @owner: the dog's owner's name
  *
- * Description: a struct that stores details aout a dog
- * it contains the name, age, and owners name of the dog
+ * Description: a struct that stores details about a dog.
+ * It contains the name, age, and owners name of the dog
+ *
  */
-
 struct dog
 {
 	char *name;
