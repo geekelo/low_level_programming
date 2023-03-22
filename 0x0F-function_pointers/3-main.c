@@ -12,13 +12,13 @@ int main(int argc, char *argv[])
 {
 	int ans;
 
-	if (argc != 4)	
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-        if (!get_op_func(argv[2]) || argv[2][1] != '\0')	
+	if (!get_op_func(argv[2]) || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	
+
 	ans = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", ans);
 	return (0);
