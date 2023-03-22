@@ -36,3 +36,4 @@ int main(void)
     array_iterator(array, 5, &print_elem_hex);
     return (0);
 }
+
