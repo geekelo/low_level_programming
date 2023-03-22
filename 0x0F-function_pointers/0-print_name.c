@@ -5,7 +5,7 @@
  * print_name - calls a function and passes a name to
  * be printed inside a function pointer
  * @name: the name to be printed
- * @(*f)(char *): function pointer to a function meant
+ * @f: function pointer to a function meant
  * to print the name
  */
 
