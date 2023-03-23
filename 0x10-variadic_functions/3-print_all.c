@@ -17,9 +17,8 @@ void print_all(const char * const format, ...)
 	int len = strlen(format);
 
 	va_start(args, format);
-	while (len > 0)
-	{
-	while (i < len)
+
+	while ((i < len) && (format != NULL))
 	{
 		y = 0;
 		switch (format[j])
@@ -46,8 +45,6 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		i++;
 		j++;
-	}
-	len = 0;
 	}
 	printf("\n");
 }
