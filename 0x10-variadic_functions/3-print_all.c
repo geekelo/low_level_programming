@@ -11,7 +11,7 @@
 void print_all(const char * const format, ...)
 {
 	int j = 0, y;
-	long unsigned i = 0;
+	unsigned long i = 0;
 	char *x;
 	va_list args;
 
