@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	print_all("ceis", 'B', 3, NULL);
+	print_all(NULL, 'B', 3, NULL);
 	return (0);
 }
 

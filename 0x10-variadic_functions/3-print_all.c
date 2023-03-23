@@ -10,15 +10,14 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0, y;
+	int j = 0, y;
+	long unsigned i = 0;
 	char *x;
 	va_list args;
 
-	int len = strlen(format);
-
 	va_start(args, format);
 
-	while ((i < len) && (format != NULL))
+	while ((format != NULL) && (i < strlen(format)))
 	{
 		y = 0;
 		switch (format[j])
@@ -44,11 +43,12 @@ void print_all(const char * const format, ...)
 			default:
 				y = 1;
 		}
-		if ((i != (len - 1)) && (y == 0))
+		if ((i != (strlen(format) - 1)) && (y == 0))
 			printf(", ");
 		i++;
 		j++;
 	}
 	printf("\n");
+	va_end(args);
 }
 
