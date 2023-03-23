@@ -4,8 +4,6 @@
  * get_op_func - selects thr correct function to perform
  * the operation asked by the user
  * @s: the operator
- * @x: the first number for the operation
- * @y: the second number for the opration
  * Return: the answer
  */
 
