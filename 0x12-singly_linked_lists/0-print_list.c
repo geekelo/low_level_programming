@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * print_list - counts and prints the str members of each node on
