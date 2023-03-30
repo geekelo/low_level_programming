@@ -7,7 +7,7 @@
  * the link list. Counts and returns the total number of nodes
  * @h: the first node on the link list
  *
- * Returns: the total number of nodes on the link list
+ * Return: the total number of nodes on the link list
  */
 
 size_t print_list(const list_t *h)
