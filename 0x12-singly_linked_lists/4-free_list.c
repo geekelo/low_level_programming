@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- *
- *
+ * free_list - a function that frees a list_t list
+ * @head: the first node on the link list
  *
  */
 
