@@ -1,0 +1,26 @@
+#include "lists.h"
+
+/**
+ *
+ *
+ */
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	unsigned int count = 1;
+	listint_t *tmp;
+
+	tmp = head;
+	while (count < index)
+	{
+
+		tmp = tmp->next;
+		if ((tmp == NULL) && (count < index))
+			return (NULL);
+		count++;
+
+	}
+
+	return (tmp);
+}
+
