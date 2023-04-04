@@ -8,21 +8,28 @@
 
 void free_listint2(listint_t **head)
 {
+	listint_t *temp;
+
+	if (!head)
+		return;
 	if (*head)
 	{
-	listint_t *temp, *set;
-
-	temp = *head;
-
-	*head = NULL;
-	while (temp)
-	{
-		set = temp->next;
-		temp = temp->next;
-		free(set);
+		temp = *head;
+		*head = NULL;
+		free_listint(temp);
+		return;
 	}
-	free(temp);
-	}
+}
+/**
+ * free_listint - frees all the node in a list.
+ * @head: pointer to a list.
+ */
+void free_listint(listint_t *head)
+{
+	if (!head)
+		return;
+	free_listint(head->next);
+	free(head);
 
 }
 
