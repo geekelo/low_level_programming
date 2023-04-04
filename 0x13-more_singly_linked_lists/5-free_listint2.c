@@ -24,6 +24,7 @@ void free_listint2(listint_t **head)
  * free_listint - frees all the node in a list.
  * @head: pointer to a list.
  */
+
 void free_listint(listint_t *head)
 {
 	if (!head)
