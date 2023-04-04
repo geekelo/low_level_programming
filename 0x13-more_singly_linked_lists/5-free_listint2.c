@@ -9,12 +9,14 @@ void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 
-	if (*head)
+	if (!(*head))
 	{
+		return;
+	}
 		temp = *head;
 		*head = NULL;
 		free_listint(temp);
-	}
+
 }
 
 /**
@@ -25,14 +27,11 @@ void free_listint2(listint_t **head)
 void free_listint(listint_t *head)
 {
 
-
 	if (!head)
 	{
 		return;
 	}
 	free_listint(head->next);
 	free(head);
-
-
 }
 
