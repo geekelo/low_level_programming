@@ -13,10 +13,12 @@ void free_listint2(listint_t **head)
 	{
 		return;
 	}
+	if (head)
+	{
 		temp = *head;
 		*head = NULL;
 		free_listint(temp);
-
+	}
 }
 
 /**
