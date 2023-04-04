@@ -1,3 +1,4 @@
+
 #include "lists.h"
 
 /**
@@ -7,33 +8,27 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *temp;
-
 	if (!head)
 	{
 		return;
 	}
-	if (head)
+	if (*head)
 	{
-		temp = *head;
-		*head = NULL;
-		free_listint(temp);
-	}
-}
+	listint_t *temp, *set;
 
-/**
- * free_listint - frees all the node in a list.
- * @head: pointer to a list.
- */
+	temp = *head;
 
-void free_listint(listint_t *head)
-{
-
-	if (!head)
+	
+	while (temp)
 	{
-		return;
+		set = temp;
+		temp = temp->next;
+		free(set);
 	}
-	free_listint(head->next);
-	free(head);
+	free(temp);
+	*head = NULL;
+
+	}
+	return;
 }
 
