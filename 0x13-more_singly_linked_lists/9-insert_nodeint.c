@@ -26,15 +26,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 		newnode->n = n;
 
-		while (count < idx)
+		while ((count < idx) && (temp))
 		{
 			count++;
-			temp = temp->next;
-		
+			temp = temp->next;	
 		}
-		if ((temp == NULL) && (count + 1 < idx))
+		if (count < idx)
 		{
 			return (NULL);
+		}
+		if ((temp == NULL) && ((count + 1) == idx))
+		{
+			temp = newnode;
+			return (*head);
 		}
 		newnode->next = temp->next;
 		temp->next = newnode;
