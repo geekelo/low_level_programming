@@ -43,12 +43,12 @@ size_t print_listint_safe(const listint_t *head)
 size_t loo(const listint_t *head, const listint_t *slow, const listint_t *fast)
 {
 	const listint_t *temp;
-	size_t count = 1, i = 0;
+	size_t count, i = 0;
 
 	temp = head;
 	if (slow == fast)
 	{
-
+		count = 1;
 		while (slow->next != fast)
 		{
 			slow = slow->next;
@@ -68,10 +68,11 @@ size_t loo(const listint_t *head, const listint_t *slow, const listint_t *fast)
 			temp = temp->next;
 		}
 		printf("-> [%p] %i\n", (void *)temp, temp->n);
-	
+
 	}
 	else
 	{
+		count = 0;
 		while (temp)
 		{
 			printf("[%p] %i\n", (void *)temp, temp->n);
