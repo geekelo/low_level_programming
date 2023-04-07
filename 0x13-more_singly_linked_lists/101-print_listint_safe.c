@@ -24,22 +24,23 @@ size_t print_listint_safe(const listint_t *head)
 				break;
 		}
 
-		return (ploop(head, slow, fast));
-	
+		return (loo(head, slow, fast));
+
 	}
 
 	return (0);
 }
 
 /**
- * ploop - finction tat checks for loop in link list
+ * loo - finction tat checks for loop in link list
  * and prints element of the link list
  * @head: pointer to the first node
  * @slow: slow paced pointer to check for loop in list
  * @fast: fast paced pointer to check for loop in list
+ * Return: the number of elements
  */
 
-size_t ploop(const listint_t *head, const listint_t *slow, const listint_t *fast)
+size_t loo(const listint_t *head, const listint_t *slow, const listint_t *fast)
 {
 	const listint_t *temp;
 	size_t count = 1, i = 0;
@@ -47,7 +48,7 @@ size_t ploop(const listint_t *head, const listint_t *slow, const listint_t *fast
 	temp = head;
 	if (slow == fast)
 	{
-	
+
 		while (slow->next != fast)
 		{
 			slow = slow->next;
