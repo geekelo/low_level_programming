@@ -16,7 +16,7 @@ size_t print_listint_safe(const listint_t *head)
 
 		fast = head;
 		slow = head;
-		while (fast->next != NULL)
+		while ((fast != NULL) && (fast->next != NULL))
 		{
 			slow = slow->next;
 			fast = fast->next->next;
@@ -24,7 +24,7 @@ size_t print_listint_safe(const listint_t *head)
 				break;
 		}
 
-		ploop(head, slow, fast);
+		return (ploop(head, slow, fast));
 	
 	}
 
@@ -39,15 +39,15 @@ size_t print_listint_safe(const listint_t *head)
  * @fast: fast paced pointer to check for loop in list
  */
 
-void ploop(const listint_t *head, const listint_t *slow, const listint_t *fast)
+size_t ploop(const listint_t *head, const listint_t *slow, const listint_t *fast)
 {
 	const listint_t *temp;
+	size_t count = 1, i = 0;
 
 	temp = head;
 	if (slow == fast)
 	{
-		int count = 1, i = 0;
-
+	
 		while (slow->next != fast)
 		{
 			slow = slow->next;
@@ -57,19 +57,27 @@ void ploop(const listint_t *head, const listint_t *slow, const listint_t *fast)
 		while (slow != fast)
 		{
 			slow = slow->next;
+			fast = fast->next;
 			count++;
 		}
 
 		for (i = 0; i < count; i++)
 		{
-			printf("[%p] %i", (void *)temp, temp->n);
+			printf("[%p] %i\n", (void *)temp, temp->n);
+			temp = temp->next;
+		}
+		printf("-> [%p] %i\n", (void *)temp, temp->n);
+
+	}
+	else
+	{
+		while (temp)
+		{
+			printf("[%p] %i\n", (void *)temp, temp->n);
 			temp = temp->next;
 		}
 	}
-	while (temp)
-	{
-	printf("[%p] %i", (void *)temp, temp->n);
-	temp = temp->next;
-	}
+
+	return (count);
 }
 
