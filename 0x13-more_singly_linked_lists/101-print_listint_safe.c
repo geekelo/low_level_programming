@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
+ * print_listint_safe - prints a link list
+ * @head: pointer to the first node on the list
+ * Return: 0 on success
  */
 
 size_t print_listint_safe(const listint_t *head)
@@ -16,23 +17,33 @@ size_t print_listint_safe(const listint_t *head)
 		while (fast->next != NULL)
 		{
 			slow = slow->next;
-		 	fast = fast->next->next;
-		 	if (slow == fast)
-		 		break;
+			fast = fast->next->next;
+			if (slow == fast)
+				break;
 		}
 
-		print_loop(head, slow, fast);
+		ploop(head, slow, fast);
+		return (0);
 	}
+	exit(98);
 	return (0);
 }
 
-void print_loop(const listint_t *head, const listint_t *slow, const listint_t *fast)
+/**
+ * ploop - finction tat checks for loop in link list
+ * and prints element of the link list
+ * @head: pointer to the first node
+ * @slow: slow paced pointer to check for loop in list
+ * @fast: fast paced pointer to check for loop in list
+ */
+
+void ploop(const listint_t *head, const listint_t *slow, const listint_t *fast)
 {
 	const listint_t *temp;
 
 	temp = head;
 	if (slow == fast)
-	{	
+	{
 		int count = 1, i = 0;
 
 		while (slow->next != fast)
@@ -51,7 +62,7 @@ void print_loop(const listint_t *head, const listint_t *slow, const listint_t *f
 		{
 			printf("[%p] %i", (void *)temp, temp->n);
 			temp = temp->next;
-		}	
+		}
 	}
 	while (temp)
 	{
