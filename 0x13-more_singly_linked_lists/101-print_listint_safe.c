@@ -23,9 +23,9 @@ size_t print_listint_safe(const listint_t *head)
 		}
 
 		ploop(head, slow, fast);
-		return (0);
+	
 	}
-	exit(98);
+
 	return (0);
 }
 
