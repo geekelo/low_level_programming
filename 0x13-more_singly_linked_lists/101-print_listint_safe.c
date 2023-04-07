@@ -8,6 +8,8 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
+	if (head == NULL || head->next == NULL)
+		return (0);
 	if (head)
 	{
 		const listint_t *slow, *fast;
