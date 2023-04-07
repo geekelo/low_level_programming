@@ -68,7 +68,7 @@ size_t loo(const listint_t *head, const listint_t *slow, const listint_t *fast)
 			temp = temp->next;
 		}
 		printf("-> [%p] %i\n", (void *)temp, temp->n);
-
+	
 	}
 	else
 	{
@@ -76,6 +76,7 @@ size_t loo(const listint_t *head, const listint_t *slow, const listint_t *fast)
 		{
 			printf("[%p] %i\n", (void *)temp, temp->n);
 			temp = temp->next;
+			count++;
 		}
 	}
 
