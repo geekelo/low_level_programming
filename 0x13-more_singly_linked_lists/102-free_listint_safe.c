@@ -9,7 +9,7 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	if (((*h) == NULL) || ((*h)->next == NULL))
+	if ((h == NULL) || ((*h) == NULL) || ((*h)->next == NULL))
 		return (0);
 	if (*h)
 	{
@@ -68,19 +68,19 @@ size_t floo(listint_t **h, listint_t *slow, listint_t *fast)
 		*h = (*h)->next;
 		free(temp);
 		}
-		h = NULL;
+		*h = NULL;
 		return (count);
 	}
 	count = 0;
-	temp = *h;
 	while (*h)
 	{
+	temp = *h;
 	*h = (*h)->next;
 	free(temp);
-	temp = *h;
+
 	count++;
 	}
-	h = NULL;
+	*h = NULL;
 	return (count);
 }
 
