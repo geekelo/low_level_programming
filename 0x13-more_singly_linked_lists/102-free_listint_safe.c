@@ -18,7 +18,7 @@ size_t free_listint_safe(listint_t **h)
 		slow = *h;
 		fast = *h;
 
-		while (((*h) != NULL) && ((*h)->next != NULL))
+		while ((fast != NULL) && (fast->next != NULL))
 		{
 			slow = slow->next;
 			fast = fast->next->next;
@@ -45,7 +45,6 @@ size_t floo(listint_t **h, listint_t *slow, listint_t *fast)
 	size_t count, i;
 	listint_t *temp;
 
-	temp = *h;
 	if (slow ==  fast)
 	{
 		count = 1;
@@ -65,15 +64,16 @@ size_t floo(listint_t **h, listint_t *slow, listint_t *fast)
 
 		for (i = 0; i < count; i++)
 		{
+		temp = *h;
 		*h = (*h)->next;
 		free(temp);
-		temp = *h;
 		}
 		h = NULL;
 		return (count);
 	}
 	count = 0;
-	while (temp)
+	temp = *h;
+	while (*h)
 	{
 	*h = (*h)->next;
 	free(temp);
