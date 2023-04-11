@@ -10,29 +10,33 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i = 0, dec = 0;
 	int len = 0;
-	/* search for invallid character and */
-	/* get the length of array */
-	while (b[i] != '\0')
-	{
-		if ((b[i] != '1') && (b[i] != '0'))
-			return (0);
-		i++;
-		len++;
-	}
-	/*does the conversion*/
-	len = len - 1;
-	i = 0;
-	while (len >= 0)
-	{
-		if ((b[i] == '1') && (len > 1))
-			dec += _pow(2, len);
 
-		if ((b[i] == '1') && (len == 1))
-			dec += 2;
-		if ((b[i] == '1') && (len == 0))
-			dec += 1;
-		len--;
-		i++;
+	if (b)
+	{
+		/* search for invallid character and */
+		/* get the length of array */
+		while (b[i] != '\0')
+		{
+			if ((b[i] != '1') && (b[i] != '0'))
+				return (0);
+			i++;
+			len++;
+		}
+		/*does the conversion*/
+		len = len - 1;
+		i = 0;
+		while (len >= 0)
+		{
+			if ((b[i] == '1') && (len > 1))
+				dec += _pow(2, len);
+
+			if ((b[i] == '1') && (len == 1))
+				dec += 2;
+			if ((b[i] == '1') && (len == 0))
+				dec += 1;
+			len--;
+			i++;
+		}
 	}
 	return (dec);
 }
