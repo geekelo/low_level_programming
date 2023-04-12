@@ -13,10 +13,10 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (n)
 	{
 		unsigned long int len = 0, num = n;
-		
+
 		/* calc the length of num */
 
-		while (num > 1)
+		while (num > 0)
 		{
 			num = num >> 1;
 			len++;
