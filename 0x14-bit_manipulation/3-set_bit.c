@@ -12,7 +12,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index > (sizeof(*n) * 8))
 		return (-1);
-
+	/* make the target digit the last digit */
+	/* if the last digit is not already 1 then */
+	/* add 1 at index to n base 2 format*/
 	if (!((*n >> index) & 1))
 		*n = *n + (1 << index);
 	return (1);
